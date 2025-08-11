@@ -211,3 +211,82 @@
     radial-gradient(circle at 80% 20%, oklch(0.7 0.15 240 / 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 80%, oklch(0.5 0.25 240 / 0.1) 0%, transparent 50%);
 }
+
+/* Manifesto section specific styles */
+#manifesto {
+  background: linear-gradient(135deg, 
+    oklch(0.08 0.02 240 / 0.95) 0%, 
+    oklch(0.12 0.08 240 / 0.98) 50%, 
+    oklch(0.08 0.02 240 / 0.95) 100%);
+}
+
+#manifesto .text-gradient {
+  background: linear-gradient(135deg, 
+    oklch(0.6 0.2 240), 
+    oklch(0.7 0.15 240), 
+    oklch(0.8 0.1 240));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.manifesto-card {
+  backdrop-filter: blur(10px);
+  background: oklch(0.12 0.03 240 / 0.5);
+  border: 1px solid oklch(0.6 0.2 240 / 0.2);
+  transition: all 0.3s ease;
+}
+
+.manifesto-card:hover {
+  border-color: oklch(0.6 0.2 240 / 0.4);
+  background: oklch(0.12 0.03 240 / 0.7);
+  transform: translateY(-2px);
+}
+
+/* Approach Section Styles */
+#abordagem {
+  background: linear-gradient(135deg, 
+    oklch(0.08 0.02 240 / 0.95) 0%, 
+    oklch(0.12 0.08 240 / 0.98) 50%, 
+    oklch(0.08 0.02 240 / 0.95) 100%);
+}
+
+.approach-methodology-card {
+  backdrop-filter: blur(8px);
+  background: oklch(0.12 0.03 240 / 0.3);
+  border: 1px solid oklch(0.6 0.2 240 / 0.15);
+  transition: all 0.4s ease;
+}
+
+.approach-methodology-card:hover {
+  border-color: oklch(0.6 0.2 240 / 0.4);
+  background: oklch(0.12 0.03 240 / 0.5);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.approach-benefit-card {
+  backdrop-filter: blur(6px);
+  background: oklch(0.7 0.15 240 / 0.1);
+  border: 1px solid oklch(0.7 0.15 240 / 0.2);
+  transition: all 0.3s ease;
+}
+
+.approach-benefit-card:hover {
+  border-color: oklch(0.7 0.15 240 / 0.4);
+  background: oklch(0.7 0.15 240 / 0.15);
+  transform: translateY(-2px);
+}
+
+.approach-step-number {
+  background: linear-gradient(135deg, 
+    oklch(0.6 0.2 240 / 0.2), 
+    oklch(0.7 0.15 240 / 0.2));
+  transition: all 0.3s ease;
+}
+
+.approach-step-number:hover {
+  background: linear-gradient(135deg, 
+    oklch(0.6 0.2 240 / 0.4), 
+    oklch(0.7 0.15 240 / 0.4));
+  transform: scale(1.1);
+}
